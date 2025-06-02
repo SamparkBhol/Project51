@@ -1,7 +1,5 @@
-# 🧠 NLPlang_small_model — HyDE-based Zero-Shot Dense Retrieval
-
 This project is inspired by the groundbreaking research paper:  
-**["Precise Zero-Shot Dense Retrieval without Relevance Labels"](https://arxiv.org/abs/2212.10496)** by *Luyu Gao, Xueguang Ma, Jimmy Lin, Jamie Callan*.
+# **["Precise Zero-Shot Dense Retrieval without Relevance Labels"](https://arxiv.org/abs/2212.10496)** by *Luyu Gao, Xueguang Ma, Jimmy Lin, Jamie Callan*.
 
 ---
 
