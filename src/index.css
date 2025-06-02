@@ -1,0 +1,87 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      --background: 0 0% 3.9%; /* Darker Slate for deep background */
+      --foreground: 0 0% 98%; /* Almost white for text */
+
+      --card: 0 0% 7%; /* Slightly lighter dark for cards */
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 7%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 210 90% 55%; /* Vibrant Blue */
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 30 90% 55%; /* Vibrant Orange */
+      --secondary-foreground: 0 0% 9%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 180 70% 50%; /* Bright Teal (was secondary) */
+      --accent-foreground: 0 0% 9%; /* Adjusted for teal */
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 210 90% 60%; /* Brighter Blue for focus rings */
+
+      --radius: 0.75rem; /* Slightly larger radius for modern feel */
+    }
+
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 7%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 7%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 210 90% 55%;
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 30 90% 55%;
+      --secondary-foreground: 0 0% 9%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 180 70% 50%;
+      --accent-foreground: 0 0% 9%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 210 90% 60%;
+    }
+
+    @layer base {
+      body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+      }
+      section > h2 {
+        @apply text-3xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+      }
+    }
+
+    .glassmorphism-card {
+      background: rgba(20, 20, 30, 0.6); 
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.1); 
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2); 
+    }
