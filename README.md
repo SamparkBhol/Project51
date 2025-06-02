@@ -1,4 +1,4 @@
-This project is inspired by the groundbreaking research paper:  
+This project is inspired by the research paper:  
 # **["Precise Zero-Shot Dense Retrieval without Relevance Labels"](https://arxiv.org/abs/2212.10496)** by *Luyu Gao, Xueguang Ma, Jimmy Lin, Jamie Callan*.
 
 ---
